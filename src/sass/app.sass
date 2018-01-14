@@ -21,6 +21,9 @@ img
     width: 100%
     height: auto
 
+a
+    text-decoration: none
+
 html, body
     font: 400 16px/1.4 -apple-system,BlinkMacSystemFont,Open Sans,Helvetica Neue,arial,Microsoft YaHei UI,Microsoft YaHei,simsun,sans-serif
     -ms-text-size-adjust: 100%
@@ -55,7 +58,7 @@ html, body
     margin-bottom: -$SECTION_PADDING
 
 .btn
-    font-size: .75rem
+    font-size: 1rem
     font-weight: bold
     padding: 1em 3.5em
     line-height: 20px
@@ -113,7 +116,7 @@ html, body
         li
             color: #fff
             background-color: $PRIMARY_COLOR
-            font-size: .8125rem
+            font-size: 1rem
             line-height: 20px
             font-weight: bold
             padding: (($NAVBAR_HEIGHT - 20px) / 2) 2em
@@ -128,12 +131,20 @@ html, body
                 border-top-right-radius: 3px
                 border-bottom-right-radius: 3px
 
+            a
+                color: #fff
+                text-decoration:none
+
         .lang
 
             li
                 color: $PRIMARY_COLOR
                 background-color: #fff
                 font-weight: normal
+
+                a
+                    color: $PRIMARY_COLOR
+                    text-decoration:none
         
         .items
 
@@ -160,7 +171,7 @@ section
 
         .text
             position: absolute
-            top: 50%
+            top: 35%
             transform: translateY(-50%)
             left: 0
             right: 0
@@ -191,7 +202,7 @@ section
             margin-bottom: 1em
 
         p
-            font-size: .8125rem
+            font-size: 1rem
             line-height: 1.8
             color: $FONT_SECOND_COLOR
             margin-bottom: 1em
@@ -204,7 +215,7 @@ section
                 margin-bottom: 2.5em
 
             .material-icons
-                font-size: .875rem
+                font-size: 1rem
                 color: $PRIMARY_COLOR
                 position: relative
                 margin-right: 2em
@@ -222,7 +233,7 @@ section
 
             li
                 color: $FONT_SECOND_COLOR
-                font-size: .875rem
+                font-size: 1rem
                 display: inline-block
                 text-align: left
                 padding-right: 5em
@@ -237,7 +248,7 @@ section
         color: $FONT_PRIMARY_COLOR
 
     p
-        font-size: .8125rem
+        font-size: 1rem
         color: $FONT_SECOND_COLOR
         line-height: 2
         margin-bottom: 2em
@@ -294,7 +305,7 @@ section
             margin-bottom: 12px
 
             th, td
-                font-size: .8125rem
+                font-size: 1rem
                 line-height: 2
                 text-align: left
 
@@ -320,7 +331,7 @@ section
 
             td
                 color: $FONT_SECOND_COLOR
-                font-size: .8125rem
+                font-size: 1rem
                 font-weight: bold
                 line-height: 2.5
 
@@ -330,7 +341,7 @@ section
     .copyright,
     .links a
         color: $FONT_PRIMARY_COLOR
-        font-size: .7rem
+        font-size: 1rem
 
 @media (min-width: 1200px)
     .container
