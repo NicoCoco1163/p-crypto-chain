@@ -38,10 +38,12 @@ html, body
         content: ''
         display: block
         clear: both
+        visibility: hidden
+        height: 0
 
 .container
     position: relative
-    width: 100%
+    width: 1200px
     padding-left: 15px
     padding-right: 15px
     margin: 0 auto
@@ -420,6 +422,173 @@ section
         border-radius: 500px
         overflow: hidden
 
-@media (min-width: 1200px)
+@media screen and (max-width: 1200px)
     .container
-        width: 1200px
+        width: 992px
+
+@media screen and (max-width: 992px)
+    .container
+        width: 768px
+
+@media screen and (max-width: 768px)
+    .container
+        width: 100%
+
+        & > .left,
+        & > .right
+            width: 100%
+            margin: 0 auto
+            text-align: center
+        
+    .navbar
+        padding-top: 20px
+
+        .logo
+            flex-basis: 30%
+            min-width: 30%
+            
+        
+        &-items
+            flex-basis: 66.66666667%
+            min-width: 66.66666667%
+            text-align: right
+            
+            ul + ul
+                margin-left: 12px
+
+            li
+                padding: 4px 7px
+                font-size: .75rem
+
+    .content
+        margin-top: -48px
+
+    section
+        // padding: 80px 0
+        &.with-background
+            .text
+                // top: 45%
+                transform: none
+                h2 
+                    font-size: 1.5rem
+                    margin-bottom: .5em
+                    text-shadow: 1px 2px 3px $FONT_SECOND_COLOR
+                p
+                    // font-size: .875rem
+                    // letter-spacing: -.5px
+                    line-height: 1.8
+                    text-shadow: 1px 1px 3px $FONT_SECOND_COLOR
+
+        .title
+            margin-bottom: 30px
+            h3
+                font-size: 1.5rem
+                margin-bottom: .5em
+            p
+                // font-size: .875rem
+
+            table
+                margin-right: 0
+                td
+                    padding-right: 0
+                    font-size: .875rem
+                    .material-icons
+                        font-size: .875rem
+                        margin-right: .5em
+
+
+    .btn
+        font-size: .875rem
+        color: #fff
+        background-color: $PRIMARY_COLOR
+        border-color: $PRIMARY_COLOR
+        box-shadow: 0 18px 36px rgba(117, 37, 233, .25)
+        padding: .66em 1.5em
+        margin: 0
+
+        &.btn-reverse
+            margin-left: 12px
+        
+        &.with-icon
+            padding-left: 1.5em
+        
+    .text .btn
+        float: initial
+
+    .first
+        min-height: 300px
+
+    .second
+        padding-top: 120px
+        .icon
+            width: 36px
+            height: 36px
+            vertical-align: middle
+        .text
+            h3
+                font-size: 1.25rem
+                margin: 0 0 0 .25em
+                display: inline-block
+                vertical-align: middle
+            p
+                line-height: 1.8
+                font-size: .875rem
+                margin-top: 1em
+        .padding
+            padding: 30px 20px
+
+        #echopay .left img
+            transform: translateX(7%)
+        
+        #rotate
+            transform: rotate(180deg)
+            .left
+                transform: rotate(180deg)
+                img
+                    transform: translateX(-2%)
+                    margin-bottom: -20px
+
+    .routes
+        width: 100%
+        .route
+            width: 100%
+            padding-bottom: 30px
+            .route__image
+                width: 26%
+            .route__content
+                padding-top: 3.25%
+                p
+                    line-height: 1.6
+
+    .cards
+        width: 100%
+        .card
+            width: 100%
+            padding-bottom: 32px
+
+    .fourth
+        .background
+            zoom: 0.275
+        .title
+            p
+                // text-shadow: 1px 1px 1px #fff
+        &.with-background .text
+            margin-top: 120px
+        .btn-second
+            background: #fff
+
+    .footer
+        padding-bottom: 20px
+        padding-top: 100px
+        .container
+            padding-left: 30px
+            padding-right: 30px
+            flex-direction: column
+            
+            & > .block
+                padding-left: 0
+                flex-basis: 40%
+        
+        .contact
+            .logo
+                width: 50%
